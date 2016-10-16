@@ -1,0 +1,63 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity"
+    android:background="#f1f3">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_weight="1.1"
+        android:gravity="center_vertical"
+        android:weightSum="1"
+        android:background="@color/accent_material_dark">
+
+        <TextView
+            android:layout_width="268dp"
+            android:layout_height="wrap_content"
+            android:text="Check Your Exchange Here!!"
+            android:id="@+id/textView"
+            android:textSize="20sp"
+            android:layout_gravity="center_horizontal"
+            android:layout_weight="0.21"
+            android:autoText="false"
+            android:textColor="#e62828" />
+
+        <Spinner
+            android:id="@+id/spinner_send_money"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:popupBackground="#11Ff3f"
+            android:spinnerMode="dropdown"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="5dp"
+            android:background="#FF6596"
+            android:layout_weight="0.19" />
+
+        <Spinner
+            android:id="@+id/spinner_receive_money"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:popupBackground="#961127"
+            android:layout_marginTop="10dp"
+            android:spinnerMode="dropdown"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="5dp"
+            android:background="#4d988d"
+            android:layout_weight="0.23" />
+
+        <TextView
+            android:id="@+id/activity_money_transfer_txt_current_currency_rate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="Current Exchange Rate:"
+            android:layout_marginTop="70dp"
+            android:textColor="#ee3169"/>
+
+    </LinearLayout>
+
+</LinearLayout>
